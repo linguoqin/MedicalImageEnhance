@@ -1,0 +1,16 @@
+%%ÑÝÊ¾³ÌÐò  demo
+clear all;
+clc;
+imtool close all;
+
+data_dir = './data/Test.dcm';
+src_image = double(dicomread(data_dir));
+
+iternum = 5;
+
+[rows,cols] = size(src_image);
+
+%guassian ÑÚÄ£
+mask = double(zeros(rows,cols));
+
+mask = double();
